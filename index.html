@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="./styleSheet/style.css" />
+        
+    <script defer src="./class/class.js"></script>
+    <script defer src="./scriptData/soldiers_ListNameLast.js"></script>
+    <script defer src="./scriptData/soldiers_Registration.js"></script>
+    <script defer src="./scriptData/soldiers_Search.js"></script>
+    <script defer src="./scriptData/soldiers_Delete.js"></script>
+    <script defer src="./scriptData/soldiers_Editor.js"></script>
+    <script defer src="./scriptData/soldiers_List.js"></script>
+    <script defer src="./scriptData/soldiers_Login.js"></script>
+    <script defer src="./scriptData/print.js"></script>
+    <script defer src="./api/api.js"></script>
+    
+
+  </head>
+  <body>
+    <body>
+        <!--Header*-->
+        <div class="header1">
+            <h1 class="color1">MINISTERY OF *********</h1>
+        </div>
+    
+        <div class="header2">
+            <h1 class="color2">REGISTRATION PORTAL</h1>
+        </div>
+        <img class="logoGov__left" src="./img/govUaLogo.png" alt="logoGov" />
+        <img class="logoGov__right" src="./img/govUaLogo.png" alt="logoGov" />
+        <p class="textImportant">
+            This page is only for registration of ****** and ******
+        </p>
+    
+<!--LOGGIN SCREEN-->
+      
+<div id="containerLog" class="containerLog">
+  <hr>
+<form action="row" method="get">
+  <label class="labelName">Login screen</label>
+<input id="inputLog" class="inputLog"></input>
+</form>
+<button id="loginButton" class="loginButton">Login with Key</button>
+
+<label  class="checkBoxbutton" for="accept">
+  <input id="checkBoxId" type="checkbox" id="accept" name="accept" value="yes">  Accept terms and conditions
+</label>
+
+<hr>
+</div>
+
+
+<!--DISPLAY ON OFF ALL ELEMENTS OF PAGE-->
+<div id="displayOffAll" class="displayOffAll">
+
+
+        <!-- REGISTRATION FORM-->
+        <div class="flex-container" class="btsMenu">
+          <button class="menu" class="menuReg" id="menuReg">REGISTRATION</button>
+        </div>
+<div class="forma" id="forma">
+  <!--FIRST NAME-->
+  <div class="registrBts" id="registrBts">
+  <form class="formDataGet" action="" method="get">
+<div  class="inputRow">
+      <label for="fName">First Name:</label>
+      <input class="inputForm" type="text" type="reset" id="name" name="fName" />
+</div>
+  <br />
+<!--LAST NAME-->
+  <div class="inputRow">
+      <label for="lName">Last Name:</label>
+      <input class="inputForm" type="text"  type="reset" id="lName" name="lName"  />
+</div><br />
+<!--ID-->
+<div class="inputRow">
+      <label for="id">****** ID:</label>
+      <input class="inputForm" type="text" type="reset"  id="id" name="id" />
+</div></form>
+<!--SEND DATA BUTTON-->
+<div class="buttonDone">
+  <button class="sendData" id="sendData" type="reset">SEND DATA</button>
+  </div>
+</div>
+<hr/>
+<!--SEARCH SOLDIER-->
+<div class="flex-container" class="inputRow" class="btsMenu">
+  <button class="menu" id="searchSold">SEARCH SOLDIER</button>
+</div>          
+
+<form class="formDataGet" action="row" method="get"> 
+  <div  id="dropBtnSearch" class="searchSoldier" class="inputRow">
+    <label for="id" class="inputForm">SEARCH SOLDIER BY ID:</label>
+      <input class="inputForm" 
+      id="searchSoldier"
+      type="text" 
+      id="id" 
+      name="id" />
+         </div>
+  </form>
+    
+  <div class="flex-container" class="btsMenu">
+<button id="searchBtn" class="searchBtn" class="inputRow">SEARCH</button>
+</div>
+
+<div id="noDisplayName" class="noDisplayName">
+<form class="formDataGet" action="row" method="get"> 
+  <div  id="idFirstName" class="idFirstName" class="inputRow">
+    <label for="id" class="inputForm">First Name:</label></div>
+  </form>
+    <div 
+    class="idFirstNameWrite"
+    id="idFirstNameForm"
+    ></div>  </div>
+    
+    <div id="noDisplayLname" class="noDisplayLname">
+    <form class="formDataGet" action="row" method="get"> 
+    <div  id="idLastName" class="idLastName" class="inputRow">
+      <label for="id" class="inputForm">Last Name:</label></div>
+    </form>
+    <div 
+    class="idLastNameWrite"
+    id="idLastNameForm"
+    ></div></div>
+        
+<hr/>
+
+<!--DELETE SOLDIER-->
+<div class="flex-container" class="btsMenu">
+  <button class="menu" class="menuReg" id="menuRegistration">DELETE SOLDIER</button>
+</div>
+  <form class="formDataGet" action="row" method="get">      
+    <div  id="del" class="delSoldier" class="inputRow">
+      <label for="id" class="inputForm" >REMUVE BY ID:</label>
+      <input class="inputForm" 
+      id="delSold"
+      type="text" 
+      id="id" 
+      name="id" />
+      </div>
+</form>
+
+<div class="flex-container" class="btsMenu">
+<button  class="btnDel" id="delBtn">DELETE</button>
+</div>
+<hr/>
+
+<!--EDIT SOLDIER*-->
+<div class="flex-container" class="btsMenu"> 
+  <button class="menu" id="editSoldier">EDIT SOLDIER</button>
+</div>
+<form class="formDataGet" action="row" method="get"> 
+  <div  id="editForm" class="editForm" class="inputRow">
+    <label for="id" class="inputForm">EDIT BY ID:</label>
+      <input class="inputForm" 
+      id="editFormId"
+      type="text" 
+      id="id" 
+      name="id" />
+         </div>
+  </form>
+
+  <div id="editFormNone" class="editFormNoneName">
+  <form class="formDataGet" action="row" method="get"> 
+  <div  id="editName" class="editName" class="inputRow">
+    <label for="id" class="inputForm">New First Name:</label>
+      <input class="inputForm" 
+      id="editNameForm"
+      type="text" 
+      id="id" 
+      name="id" />
+         </div>
+  </form>
+  </div>
+
+  <div id="editFormNoneLastName" class="editFormNoneLastName">
+  <form class="formDataGet" action="row" method="get"> 
+    <div  id="editLastName" class="editLastName" class="inputRow">
+      <label for="id" class="inputForm">New Last Name:</label>
+        <input class="inputForm" 
+        id="editLastNameForm"
+        type="text" 
+        id="id" 
+        name="id" />
+           </div>
+    </form>
+</div>
+    <div class="flex-container" class="btsMenu">
+      <button  class="editBtn" id="editBtnShow">EDIT BY ID</button>
+      </div>
+<hr/>
+
+<!--LIST SOLDIER*-->
+<div class="flex-container" class="btsMenu"> <button class="menu" id="showSoldier">LIST SOLDIER</button></div>
+<hr/>
+<!--PRINT*-->
+<div class="flex-container" class="btsMenu"><button class="menu" id="btsPrint">PRINT</button></div>
+        </div>   
+        <hr/>
+<!--LIST NAME SURENAME-->
+<div id="fNameLastNmae"></div>
+        <!--API-->
+        <button id="divW">Weather Map</button>
+
+</div>
+</body>
+</html>

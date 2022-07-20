@@ -1,0 +1,229 @@
+body {
+background-color: lightgrey;
+}
+
+/*HEADER*/
+.header1 {
+margin: 0px;
+text-align: center;
+background-color: rgb(0, 92, 187);
+height: 50px;
+padding: 20px;
+}
+.header2 {
+  text-align: center;
+  background-color: rgb(255, 214, 0);
+  height: 50px;
+  padding: 20px;
+  margin: 0px;
+}
+.color1 {
+  margin: 0px;
+  color: rgb(255, 214, 0);
+}
+.color2 {
+  margin: 0px;
+  color: rgb(0, 92, 187);
+}
+.logoGov__left {
+ position: relative; top: -140px;
+  height: 100px;
+  width: 100px;
+  }
+.logoGov__right {
+  height: 100px;
+  width: 100px;
+  position: relative; top: -140px; float: right;
+}
+.textImportant{
+  text-align: center;
+  color: red;
+  font-size: 25px;
+  position: relative; top: -100px;
+}
+
+/*BUTTONS MENU*/
+.flex-container{
+  margin-top: 1.2rem;
+  display: flex;
+  flex-direction: column;
+}
+.btsMenu{
+  text-align: center;
+  cursor: pointer;
+}
+.menu {
+  cursor: pointer;
+  margin: auto;
+  padding: auto;
+  color: rgb(0, 92, 187);
+  background-color: rgb(255, 214, 0);
+}
+
+/*FORM DATA*/
+.formDataGet{
+   text-align: left;
+  font-size: 35px;
+}
+
+.inputForm{
+   font-size: 25px;
+}
+.formDataGet  { 
+  
+ display: table; 
+}
+.inputRow { 
+ display: table-row;
+}
+label { 
+ display: table-cell;
+}
+input { 
+ display: table-cell;
+ margin-left:0.7rem;
+}
+
+.inputForm{
+  font-size: 25px;
+}
+
+/*DELETE SOLDIER BY ID*/
+.delSoldier {
+  margin:auto;
+ flex-direction: row;
+  display: none;
+}
+.btnDel{
+  text-align: left;
+  cursor: pointer;
+  margin: auto;
+  padding: auto;
+  color: black;
+  display: none;
+}
+
+/*DISPLAY NONE REGISTARTION BUTTON*/
+.forma {
+  width: 100%;
+  display: block;
+  justify-content: center;
+}
+.formDataGet  { 
+  display: table; 
+}
+
+label { 
+  display: table-cell;
+}
+
+/*BUTTON SEND DATA*/
+.sendData{
+   cursor: pointer;
+  }
+.buttonDone{
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  display: block;
+  justify-content: center;
+  }
+
+.result {
+  text-align: center;
+  margin-top: 50px;
+}
+.registrBts {
+    display: none;
+}
+.searchDelete{
+  text-align: center;
+
+}
+
+/*SEARCH SOLDIER*/
+.searchSoldier{
+  display: none;
+}
+.searchBtn{
+  margin: auto;
+ display: none;
+  
+}
+
+.noDisplayName{
+  display:none;
+}
+.noDisplayLname{
+  display:none;
+}
+.idFirstNameWrite{
+   padding: 0.2rem;
+  font-size: 25px;
+  width: 315px;
+  margin-left: 0.7rem;
+  border: solid 1px gray;
+  height: 2rem;
+}
+.idLastNameWrite{
+ padding: 0.2rem;
+  font-size: 25px;
+  width: 315px;
+  margin-left: 0.7rem;
+  border: solid 1px gray;
+  height: 2rem;
+}
+
+/*EDIT SOLDIER*/
+.editForm{
+  display: none;
+}
+.esditCenter{
+  text-align: center;
+}
+.editBtn{
+  display: none;
+  margin: auto;
+}
+
+/*EDIT NAME*/
+.editFormNoneName{
+  margin: auto;
+  display: none;
+}
+
+/*EDIT LAST NAME*/
+.editFormNoneLastName{
+  margin: auto;
+  display: none;
+}
+
+
+/*DISPLAY OFF ALL ELEMENTS*/
+.displayOffAll{
+  display: none;
+}
+
+/*LOGGIN FORM*/
+.containerLog {
+  text-align: -webkit-center;
+  display: block;
+}
+.labelName{
+  padding: 15px;
+  font-family:system-ui;
+  margin: auto;
+  font-size: 35px;
+}
+.inputLog{
+  text-align: center;
+  font-size: 20px;
+}
+.loginButton{
+  margin-top: 15px;
+}
+
+/*CHECK BOX*/
+.checkBoxbutton{
+   padding: 10px;
+}
