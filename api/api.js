@@ -1,6 +1,6 @@
 //API
-const divW = document.querySelector("[data-weather]")
-divW.addEventListener("click", () => {
+const weather = document.querySelector("[data-weather]")
+weather.addEventListener("click", () => {
     loadApi()
     console.log("connect with server")
 })
