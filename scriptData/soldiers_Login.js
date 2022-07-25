@@ -2,13 +2,13 @@
 
 const logIn = document.querySelector("[data-loginButton]")
 logIn.addEventListener("click", () => {
-    const logInDataForm = document.getElementById("inputLog")
+    const logInDataForm = document.querySelector("[data-inputLog]")
     const dataLogIn = logInDataForm.value
 
     if (dataLogIn >= `1`) {
-        const offScreen = document.getElementById("displayOffAll")
+        const offScreen = document.querySelector("[data-displayOffAll]")
         offScreen.style.display = "block"
-        const logInOff = document.getElementById("containerLog")
+        const logInOff = document.querySelector("[data-containerLog]")
         logInOff.style.display = "none"
 
         Swal.fire({

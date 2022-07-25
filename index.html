@@ -24,7 +24,7 @@
   </head>
   <body>
     <body>
-        <!--Header*-->
+      <!--Header*-->
         <div class="header1">
             <h1 class="color1">MINISTERY OF *********</h1>
         </div>
@@ -38,13 +38,16 @@
             This page is only for registration of ****** and ******
         </p>
     
-<!--LOGGIN SCREEN-->
+      <!--LOGGIN SCREEN-->
       
-<div id="containerLog" class="containerLog">
+<div 
+data-containerLog
+id="containerLog" class="containerLog">
   <hr>
 <form action="row" method="get">
   <label class="labelName">Login screen</label>
-<input id="inputLog" class="inputLog"></input>
+<input 
+data-inputLog class="inputLog"></input>
 </form>
 
 <button data-loginButton
@@ -53,21 +56,23 @@
 <label  class="checkBoxbutton" for="accept">
   <input
   data-checkBoxId
-   type="checkbox" id="accept" name="accept" value="yes">Accept terms and conditions
+   type="checkbox" name="accept" value="yes">Accept terms and conditions
 </label>
-
 <hr>
 </div>
-<!--DISPLAY ON OFF ALL ELEMENTS OF PAGE-->
-<div id="displayOffAll" class="displayOffAll">
 
+      <!--DISPLAY ON OFF ALL ELEMENTS OF PAGE-->
+<div 
+data-displayOffAll
+ class="displayOffAll">
 
-        <!-- REGISTRATION FORM-->
+      <!-- REGISTRATION FORM-->
         <div class="flex-container" class="btsMenu">
           <button class="menu" class="menuReg" id="menuReg">REGISTRATION</button>
         </div>
 <div class="forma" id="forma">
-  <!--FIRST NAME-->
+
+      <!--FIRST NAME-->
   <div class="registrBts" id="registrBts">
   <form class="formDataGet" action="" method="get">
 <div  class="inputRow">
@@ -75,23 +80,27 @@
       <input class="inputForm" type="text" type="reset" id="name" name="fName" />
 </div>
   <br />
-<!--LAST NAME-->
+
+      <!--LAST NAME-->
   <div class="inputRow">
       <label for="lName">Last Name:</label>
       <input class="inputForm" type="text"  type="reset" id="lName" name="lName"  />
 </div><br />
-<!--ID-->
+
+      <!--ID-->
 <div class="inputRow">
       <label for="id">****** ID:</label>
       <input class="inputForm" type="text" type="reset"  id="id" name="id" />
 </div></form>
-<!--SEND DATA BUTTON-->
+
+      <!--SEND DATA BUTTON-->
 <div class="buttonDone">
   <button class="sendData" id="sendData" type="reset">SEND DATA</button>
   </div>
 </div>
 <hr/>
-<!--SEARCH SOLDIER-->
+
+      <!--SEARCH SOLDIER-->
 <div class="flex-container" class="inputRow" class="btsMenu">
   <button class="menu" id="searchSold">SEARCH SOLDIER</button>
 </div>          
@@ -133,7 +142,7 @@
         
 <hr/>
 
-<!--DELETE SOLDIER-->
+      <!--DELETE SOLDIER-->
 <div class="flex-container" class="btsMenu">
   <button class="menu" class="menuReg" id="menuRegistration">DELETE SOLDIER</button>
 </div>
@@ -153,7 +162,7 @@
 </div>
 <hr/>
 
-<!--EDIT SOLDIER*-->
+      <!--EDIT SOLDIER*-->
 <div class="flex-container" class="btsMenu"> 
   <button class="menu" id="editSoldier">EDIT SOLDIER</button>
 </div>
@@ -198,21 +207,24 @@
       </div>
 <hr/>
 
-<!--LIST SOLDIER*-->
+      <!--LIST SOLDIER*-->
 <div data-showSoldier class="flex-container" class="btsMenu">
 <button class="menu">LIST SOLDIER</button>
 </div>
 <hr/>
-<!--PRINT*-->
+
+      <!--PRINT*-->
 <div data-btsPrint 
 class="flex-container" class="btsMenu">
   <button class="menu" >PRINT</button>
 </div>
         </div>   
         <hr/>
-<!--LIST NAME SURENAME-->
+
+      <!--LIST NAME SURENAME-->
 <div id="fNameLastNmae"></div>
-        <!--API-->
+
+      <!--API-->
         <button 
       data-weather>Weather Map</button>
 </div>
