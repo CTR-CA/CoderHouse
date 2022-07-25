@@ -42,7 +42,7 @@ function searchSoldier() {
     const valueId = searchId.value.toUpperCase();
     const nameOk = combatSquad.filter((soldier) => soldier.idName.indexOf(valueId) !== -1)
 
-    if (nameOk.length > 0) {
+    if (nameOk.length > [0]) {
 
 
         const nameSearching = document.getElementById("idFirstNameForm")
@@ -60,8 +60,7 @@ function searchSoldier() {
 
     }
 
-    else {
-
+    if (nameOk.length <= 0) {
         console.log("SOLDIERS NOT FOUNDE")
         Swal.fire({
             title: 'Soldiers not found',
@@ -71,6 +70,17 @@ function searchSoldier() {
         })
         console.log("ERROR ID")
 
+    }
+
+    if (valueId === '') {
+        console.log("SOLDIERS NOT FOUNDE")
+        Swal.fire({
+            title: 'Soldiers not found',
+            text: 'Name incorrect or does not exist',
+            icon: 'error',
+            confirmButtonText: 'OK',
+        })
+        console.log("ERROR ID")
 
     }
 }
