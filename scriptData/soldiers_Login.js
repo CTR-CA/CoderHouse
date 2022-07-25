@@ -2,6 +2,11 @@
 
 const logIn = document.querySelector("[data-loginButton]")
 logIn.addEventListener("click", () => {
+    login()
+    checkBox()
+})
+
+function login() {
     const logInDataForm = document.querySelector("[data-inputLog]")
     const dataLogIn = logInDataForm.value
 
@@ -28,6 +33,8 @@ logIn.addEventListener("click", () => {
 
         })
     }
+
+    //LOCAL STORAGE
     localStorage.setItem("LogIn KEY:", dataLogIn)
     let msg = dataLogIn <= null ? "Key incorrect" : "Key correct"
     console.log(msg)
@@ -37,9 +44,7 @@ logIn.addEventListener("click", () => {
     p.innerHTML = `LogIn KEY: ${dataLogIn}`;
     document.body.appendChild(p)
     console.log(dataLogIn)
-
-    checkBox()
-})
+}
 
 function checkBox() {
     const checkBox = document.querySelector("[data-checkBoxId]");
@@ -48,11 +53,22 @@ function checkBox() {
         const p = document.createElement("p");
         p.innerHTML = `Terms and conditions: ${checkBoxClick}<hr>`;
         document.body.appendChild(p)
-    } else {
+    }
+
+    if (!checkBoxClick === true) {
+
         const p = document.createElement("p");
         p.innerHTML = `Terms and conditions: ${checkBoxClick}<hr>`;
         document.body.appendChild(p)
+
+        Swal.fire({
+            title: 'Key not detected',
+            text: 'Check your Key',
+            icon: 'error',
+            confirmButtonText: 'OK',
+
+        })
+
     }
-    console.log(checkBoxClick);
 
 }
