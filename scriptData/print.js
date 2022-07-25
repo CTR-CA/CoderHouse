@@ -1,5 +1,5 @@
 //ADD PRINT BUTTON  ++++++++++
-const btsPrint = document.getElementById("btsPrint")
+const btsPrint = document.querySelector("[data-btsPrint]")
 btsPrint.addEventListener("click", () => {
     window.print()
 })
