@@ -46,10 +46,14 @@
   <label class="labelName">Login screen</label>
 <input id="inputLog" class="inputLog"></input>
 </form>
-<button id="loginButton" class="loginButton">Login with Key</button>
+
+<button data-loginButton
+ class="loginButton">Login with Key</button>
 
 <label  class="checkBoxbutton" for="accept">
-  <input id="checkBoxId" type="checkbox" id="accept" name="accept" value="yes">  Accept terms and conditions
+  <input
+  data-checkBoxId
+   type="checkbox" id="accept" name="accept" value="yes">Accept terms and conditions
 </label>
 
 <hr>
@@ -195,7 +199,9 @@
 <hr/>
 
 <!--LIST SOLDIER*-->
-<div class="flex-container" class="btsMenu"> <button class="menu" id="showSoldier">LIST SOLDIER</button></div>
+<div data-showSoldier class="flex-container" class="btsMenu">
+<button class="menu">LIST SOLDIER</button>
+</div>
 <hr/>
 <!--PRINT*-->
 <div data-btsPrint 
@@ -208,9 +214,7 @@ class="flex-container" class="btsMenu">
 <div id="fNameLastNmae"></div>
         <!--API-->
         <button 
-      data-weather  
-      >Weather Map</button>
-
+      data-weather>Weather Map</button>
 </div>
 </body>
 </html>

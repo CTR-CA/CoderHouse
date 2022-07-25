@@ -1,6 +1,6 @@
 //SCREEN LOGIN STORAGE +++++++++++
 
-const logIn = document.getElementById("loginButton")
+const logIn = document.querySelector("[data-loginButton]")
 logIn.addEventListener("click", () => {
     const logInDataForm = document.getElementById("inputLog")
     const dataLogIn = logInDataForm.value
@@ -42,7 +42,7 @@ logIn.addEventListener("click", () => {
 })
 
 function checkBox() {
-    const checkBox = document.getElementById("checkBoxId");
+    const checkBox = document.querySelector("[data-checkBoxId]");
     const checkBoxClick = checkBox.checked
     if (checkBoxClick === true) {
         const p = document.createElement("p");

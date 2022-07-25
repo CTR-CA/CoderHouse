@@ -1,5 +1,5 @@
 //SOLDIER LIST   ++++++++++
-const btsList = document.getElementById("showSoldier")
+const btsList = document.querySelector("[data-showSoldier]")
 btsList.addEventListener("click", () => {
     soldiersList()
 
