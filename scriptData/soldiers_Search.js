@@ -45,9 +45,9 @@ function searchSoldier() {
     if (nameOk.length > [0]) {
 
 
-        const nameSearching = document.getElementById("idFirstNameForm")
+        const nameSearching = document.querySelector("[data-idFirstNameForm]")
         nameSearching.innerHTML = nameOk[0].fName
-        const lNameSearching = document.getElementById("idLastNameForm")
+        const lNameSearching = document.querySelector("[data-idLastNameForm]")
         lNameSearching.innerHTML = nameOk[0].lName
 
         Swal.fire({
