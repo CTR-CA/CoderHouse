@@ -5,7 +5,7 @@ logIn.addEventListener("click", () => {
     const logInDataForm = document.querySelector("[data-inputLog]")
     const dataLogIn = logInDataForm.value
 
-    if (dataLogIn >= `1`) {
+    if (!dataLogIn == ``) {
         const offScreen = document.querySelector("[data-displayOffAll]")
         offScreen.style.display = "block"
         const logInOff = document.querySelector("[data-containerLog]")

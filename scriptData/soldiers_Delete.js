@@ -19,8 +19,8 @@ delSold.addEventListener("click", () => {
 
 })
 
-const btnDel = document.getElementById("delBtn")
-btnDel.addEventListener("click", () => {
+const btn = document.getElementById("delBtn")
+btn.addEventListener("click", () => {
     delSoldier()
 })
 
