@@ -73,6 +73,7 @@ data-displayOffAll
 
       <!--FIRST NAME-->
   <div 
+  data-button-registration-show-hide
   class="registrBts" id="registrBts">
   <form class="formDataGet" action="" method="get">
 <div  class="inputRow">
@@ -167,10 +168,14 @@ data-displayOffAll
 
       <!--EDIT SOLDIER*-->
 <div class="flex-container" class="btsMenu"> 
-  <button class="menu" id="editSoldier">EDIT SOLDIER</button>
+  <button 
+  data-button-editSoldier
+  class="menu">EDIT SOLDIER</button>
 </div>
 <form class="formDataGet" action="row" method="get"> 
-  <div  id="editForm" class="editForm" class="inputRow">
+  <div 
+  data-button-editSoldier-show-hide
+   class="editForm" class="inputRow">
     <label for="id" class="inputForm">EDIT BY ID:</label>
       <input class="inputForm" 
       id="editFormId"

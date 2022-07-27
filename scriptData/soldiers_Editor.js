@@ -1,8 +1,8 @@
 //SOLDIER EDITOR  ++++++++++
-const btnEdit = document.getElementById("editSoldier")
+const btnEdit = document.querySelector("[data-button-editSoldier]")
 btnEdit.addEventListener("click", () => {
 
-    const btnEditSold = document.getElementById("editForm")
+    const btnEditSold = document.querySelector("[data-button-editSoldier-show-hide]")
     if (btnEditSold.style.display === "none") {
         btnEditSold.style.display = "block"
     } else {

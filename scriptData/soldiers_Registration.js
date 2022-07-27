@@ -1,7 +1,7 @@
 //SOLDIER REGISTRATION  +++++++++++
 const bts = document.querySelector("[data-button-from-registartion]")
 bts.addEventListener("click", () => {
-    const formDrop = document.getElementById("registrBts")
+    const formDrop = document.querySelector("[data-button-registration-show-hide]")
     if (formDrop.style.display === "none") {
         formDrop.style.display = "block"
     } else {
