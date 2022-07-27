@@ -1,5 +1,5 @@
 //SOLDIER REGISTRATION  +++++++++++
-const bts = document.getElementById("menuReg")
+const bts = document.querySelector("[data-button-from-registartion]")
 bts.addEventListener("click", () => {
     const formDrop = document.getElementById("registrBts")
     if (formDrop.style.display === "none") {
@@ -11,7 +11,7 @@ bts.addEventListener("click", () => {
 })
 
 //ADD SEND DATA  +++++++++++
-const boton = document.getElementById("sendData");
+const boton = document.querySelector("[data-button-send-data]");
 boton.addEventListener("click", () => {
 
     let fName = document.getElementById("name")
