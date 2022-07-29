@@ -6,22 +6,25 @@ btsList.addEventListener("click", () => {
 })
 
 function soldiersList() {
-    combatSquad.forEach(
-        (soldier) => {
-            const p = document.createElement("p");
-            p.innerHTML = `First Name: ${soldier.fName} 
+    if (!combatSquad.length == [0]) {
+
+        combatSquad.forEach(
+            (soldier) => {
+                const p = document.createElement("p");
+                p.innerHTML = `First Name: ${soldier.fName} 
             <br>
             Last Name:${soldier.lName}
             <br>
             Soldiers ID: ${soldier.idName}
             <hr>
             `;
-            document.body.appendChild(p)
+                document.body.appendChild(p)
 
-            console.log(soldier)
-        });
+                console.log(soldier)
+            });
+    }
 
-    if (combatSquad === 0) {
+    else {
         console.log("SOLDERS NOT FOUND")
     }
 
