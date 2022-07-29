@@ -1,14 +1,14 @@
 //SOLDIERS SEARCH
-let drop = document.getElementById("searchSold")
+let drop = document.querySelector("[data-button-search-menu-show-hide]")
 drop.addEventListener("click", () => {
-    let dropForm = document.getElementById("dropBtnSearch")
+    let dropForm = document.querySelector("[data-button-search-menu-menu-show-hide]")
     if (dropForm.style.display === "none") {
         dropForm.style.display = "block"
     } else {
         dropForm.style.display = "none"
     }
 
-    let sBtn = document.getElementById("searchBtn")
+    let sBtn = document.querySelector("[data-button-search-menu-button-show-hide]")
     if (sBtn.style.display === "none") {
         sBtn.style.display = "block"
     } else {
@@ -32,7 +32,7 @@ drop.addEventListener("click", () => {
 
 })
 
-let startSearch = document.getElementById("searchBtn")
+let startSearch = document.querySelector("[data-button-searchById]")
 startSearch.addEventListener("click", () => {
     searchSoldier()
 })

@@ -105,22 +105,25 @@ data-displayOffAll
 
       <!--SEARCH SOLDIER-->
 <div class="flex-container" class="inputRow" class="btsMenu">
-  <button class="menu" id="searchSold">SEARCH SOLDIER</button>
+  <button data-button-search-menu-show-hide class="menu">SEARCH SOLDIER</button>
 </div>          
 
 <form class="formDataGet" action="row" method="get"> 
-  <div  id="dropBtnSearch" class="searchSoldier" class="inputRow">
-    <label for="id" class="inputForm">SEARCH SOLDIER BY ID:</label>
+  <div 
+  data-button-search-menu-menu-show-hide
+    id="dropBtnSearch" class="searchSoldier" class="inputRow">
+    <label class="inputForm">SEARCH SOLDIER BY ID:</label>
       <input class="inputForm" 
       id="searchSoldier"
-      type="text" 
-      id="id" 
-      name="id" />
+      type="text"/>
          </div>
   </form>
     
   <div class="flex-container" class="btsMenu">
-<button id="searchBtn" class="searchBtn" class="inputRow">SEARCH</button>
+<button
+data-button-searchById
+data-button-search-menu-button-show-hide
+id="searchBtn" class="searchBtn" class="inputRow">SEARCH</button>
 </div>
 
 <div id="noDisplayName" class="noDisplayName">
@@ -148,26 +151,17 @@ data-displayOffAll
 
       <!--DELETE SOLDIER-->
 <div class="flex-container" class="btsMenu">
-  <button class="menu" class="menuReg" id="menuRegistration">DELETE SOLDIER</button>
+  <button data-delete-soldier-show-hide class="menu" class="menuReg">DELETE SOLDIER</button>
 </div>
   <form class="formDataGet" action="row" method="get">      
-    <div
-    data-remuveById-form
-    id="del" class="delSoldier" class="inputRow">
+    <div data-remuveById-form class="delSoldier" class="inputRow">
       <label for="id" class="inputForm" >REMUVE BY ID:</label>
-      <input
-      data-delete-soldier-value
-      class="inputForm" 
-      type="text" 
-      id="id" 
-      name="id" />
+      <input data-delete-soldier-value class="inputForm" type="text"/>
       </div>
 </form>
 
 <div class="flex-container" class="btsMenu">
-<button
-data-button-delete
-class="btnDel" >DELETE</button>
+<button data-button-delete class="btnDel" >DELETE</button>
 </div>
 <hr/>
 

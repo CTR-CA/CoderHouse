@@ -1,5 +1,5 @@
 //SOLDIER DELETE ++++++++++
-const delSold = document.getElementById("menuRegistration")
+const delSold = document.querySelector("[data-delete-soldier-show-hide]")
 delSold.addEventListener("click", () => {
     const showBodyForm = document.querySelector("[data-button-delete]")
     if (showBodyForm.style.display === "none") {
