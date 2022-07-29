@@ -15,14 +15,14 @@ drop.addEventListener("click", () => {
         sBtn.style.display = "none"
     }
 
-    let dataWindowFname = document.getElementById("noDisplayName")
+    let dataWindowFname = document.querySelector("[data-display-name]")
     if (dataWindowFname.style.display === "none") {
         dataWindowFname.style.display = "block"
     } else {
         dataWindowFname.style.display = "none"
     }
 
-    let dataWindowLname = document.getElementById("noDisplayLname")
+    let dataWindowLname = document.querySelector("[data-display-last-name ]")
     if (dataWindowLname.style.display === "none") {
         dataWindowLname.style.display = "block"
     }
@@ -38,7 +38,7 @@ startSearch.addEventListener("click", () => {
 })
 
 function searchSoldier() {
-    const searchId = document.getElementById("searchSoldier")
+    const searchId = document.querySelector("[data-search-soldier-button-value]")
     const valueId = searchId.value.toUpperCase();
     const nameOk = combatSquad.filter((soldier) => soldier.idName.indexOf(valueId) !== -1)
 

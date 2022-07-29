@@ -109,34 +109,27 @@ data-displayOffAll
 </div>          
 
 <form class="formDataGet" action="row" method="get"> 
-  <div 
-  data-button-search-menu-menu-show-hide
-    id="dropBtnSearch" class="searchSoldier" class="inputRow">
+  <div data-button-search-menu-menu-show-hide class="searchSoldier" class="inputRow">
     <label class="inputForm">SEARCH SOLDIER BY ID:</label>
-      <input class="inputForm" 
-      id="searchSoldier"
-      type="text"/>
+      <input data-search-soldier-button-value class="inputForm" type="text"/>
          </div>
   </form>
     
   <div class="flex-container" class="btsMenu">
-<button
-data-button-searchById
-data-button-search-menu-button-show-hide
-id="searchBtn" class="searchBtn" class="inputRow">SEARCH</button>
+<button data-button-searchById data-button-search-menu-button-show-hide class="searchBtn" class="inputRow">SEARCH</button>
 </div>
 
-<div id="noDisplayName" class="noDisplayName">
+<div data-display-name class="noDisplayName">
 <form class="formDataGet" action="row" method="get"> 
   <div  id="idFirstName" class="idFirstName" class="inputRow">
-    <label for="id" class="inputForm">First Name:</label></div>
+    <label class="inputForm">First Name:</label></div>
   </form>
     <div 
     data-idFirstNameForm
     class="idFirstNameWrite"
     ></div>  </div>
     
-    <div id="noDisplayLname" class="noDisplayLname">
+    <div data-display-last-name class="noDisplayLname">
     <form class="formDataGet" action="row" method="get"> 
     <div  id="idLastName" class="idLastName" class="inputRow">
       <label for="id" class="inputForm">Last Name:</label></div>
