@@ -28,12 +28,13 @@ boton.addEventListener("click", () => {
         combatSquad.push(soldier);
 
         Swal.fire({
-            title: 'Processing data',
-            text: 'Data complete correct',
+            position: 'center',
             icon: 'success',
-            confirmButtonText: 'OK',
-
+            title: 'Data complete correct',
+            showConfirmButton: false,
+            timer: 1500
         })
+
     }
     else {
         Swal.fire({

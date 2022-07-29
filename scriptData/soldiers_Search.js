@@ -51,12 +51,12 @@ function searchSoldier() {
         lNameSearching.innerHTML = nameOk[0].lName
 
         Swal.fire({
-            title: 'Search is complete',
-            text: 'Soldier has finde',
+            position: 'center',
             icon: 'success',
-            confirmButtonText: 'OK',
+            title: 'Soldier has finde',
+            showConfirmButton: false,
+            timer: 1500
         })
-        console.log(nameOk)
 
     }
 
@@ -72,15 +72,4 @@ function searchSoldier() {
 
     }
 
-    if (valueId === '') {
-        console.log("SOLDIERS NOT FOUNDE")
-        Swal.fire({
-            title: 'Soldiers not found',
-            text: 'Name incorrect or does not exist',
-            icon: 'error',
-            confirmButtonText: 'OK',
-        })
-        console.log("ERROR ID")
-
-    }
 }
