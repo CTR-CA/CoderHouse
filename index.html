@@ -151,10 +151,13 @@ data-displayOffAll
   <button class="menu" class="menuReg" id="menuRegistration">DELETE SOLDIER</button>
 </div>
   <form class="formDataGet" action="row" method="get">      
-    <div  id="del" class="delSoldier" class="inputRow">
+    <div
+    data-remuveById-form
+    id="del" class="delSoldier" class="inputRow">
       <label for="id" class="inputForm" >REMUVE BY ID:</label>
-      <input class="inputForm" 
-      id="delSold"
+      <input
+      data-delete-soldier-value
+      class="inputForm" 
       type="text" 
       id="id" 
       name="id" />
@@ -162,7 +165,9 @@ data-displayOffAll
 </form>
 
 <div class="flex-container" class="btsMenu">
-<button  class="btnDel" id="delBtn">DELETE</button>
+<button
+data-button-delete
+class="btnDel" >DELETE</button>
 </div>
 <hr/>
 

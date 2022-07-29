@@ -1,7 +1,7 @@
 //SOLDIER DELETE ++++++++++
 const delSold = document.getElementById("menuRegistration")
 delSold.addEventListener("click", () => {
-    const showBodyForm = document.getElementById("delBtn")
+    const showBodyForm = document.querySelector("[data-button-delete]")
     if (showBodyForm.style.display === "none") {
         showBodyForm.style.display = "block"
     }
@@ -9,7 +9,7 @@ delSold.addEventListener("click", () => {
         showBodyForm.style.display = "none"
     }
 
-    const delSol = document.getElementById("del")
+    const delSol = document.querySelector("[data-remuveById-form]")
     if (delSol.style.display === "none") {
         delSol.style.display = "block"
     }
@@ -19,13 +19,13 @@ delSold.addEventListener("click", () => {
 
 })
 
-const btn = document.getElementById("delBtn")
+const btn = document.querySelector("[data-button-delete]")
 btn.addEventListener("click", () => {
     delSoldier()
 })
 
 function delSoldier() {
-    const btnDel = document.getElementById("delSold")
+    const btnDel = document.querySelector("[data-delete-soldier-value]")
     let valueForm = btnDel.value.toUpperCase()
     let searchId = combatSquad.find((combatSquad) => combatSquad.idName === valueForm);
 
