@@ -44,7 +44,6 @@ function searchSoldier() {
 
     if (nameOk.length > [0]) {
 
-
         const nameSearching = document.querySelector("[data-idFirstNameForm]")
         nameSearching.innerHTML = nameOk[0].fName
         const lNameSearching = document.querySelector("[data-idLastNameForm]")
