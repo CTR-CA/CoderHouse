@@ -3,14 +3,22 @@
 const logIn = document.querySelector("[data-loginButton]")
 logIn.addEventListener("click", () => {
     login()
-    checkBox()
 })
 
 function login() {
     const logInDataForm = document.querySelector("[data-inputLog]")
     const dataLogIn = logInDataForm.value
 
-    if (!dataLogIn == ``) {
+    const checkBox = document.querySelector("[data-checkBoxId]");
+    const checkBoxClick = checkBox.checked
+
+    if (!dataLogIn == `` && checkBoxClick === true) {
+
+        const p = document.createElement("p");
+        p.innerHTML = `Terms and conditions: ${checkBoxClick}<hr>`;
+        document.body.appendChild(p)
+
+
         const offScreen = document.querySelector("[data-displayOffAll]")
         offScreen.style.display = "block"
         const logInOff = document.querySelector("[data-containerLog]")
@@ -26,8 +34,8 @@ function login() {
     }
     else {
         Swal.fire({
-            title: 'Key not detected',
-            text: 'Check your Key',
+            title: 'Check LogIn key or terms',
+            text: 'Put the Login Key and accept the terms',
             icon: 'error',
             confirmButtonText: 'OK',
 
@@ -44,31 +52,4 @@ function login() {
     p.innerHTML = `LogIn KEY: ${dataLogIn}`;
     document.body.appendChild(p)
     console.log(dataLogIn)
-}
-
-function checkBox() {
-    const checkBox = document.querySelector("[data-checkBoxId]");
-    const checkBoxClick = checkBox.checked
-    if (checkBoxClick === true) {
-        const p = document.createElement("p");
-        p.innerHTML = `Terms and conditions: ${checkBoxClick}<hr>`;
-        document.body.appendChild(p)
-    }
-
-    if (!checkBoxClick === true) {
-
-        const p = document.createElement("p");
-        p.innerHTML = `Terms and conditions: ${checkBoxClick}<hr>`;
-        document.body.appendChild(p)
-
-        Swal.fire({
-            title: 'Key not detected',
-            text: 'Check your Key',
-            icon: 'error',
-            confirmButtonText: 'OK',
-
-        })
-
-    }
-
 }
