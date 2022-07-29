@@ -25,6 +25,13 @@ function soldiersList() {
     }
 
     else {
+        Swal.fire({
+            title: 'Soldier not found',
+            text: 'Check soldier ID',
+            icon: 'error',
+            confirmButtonText: 'OK',
+
+        })
         console.log("SOLDERS NOT FOUND")
     }
 
