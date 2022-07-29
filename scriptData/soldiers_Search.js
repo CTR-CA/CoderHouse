@@ -1,33 +1,33 @@
 //SOLDIERS SEARCH
 let drop = document.querySelector("[data-button-search-menu-show-hide]")
 drop.addEventListener("click", () => {
-    let dropForm = document.querySelector("[data-button-search-menu-menu-show-hide]")
-    if (dropForm.style.display === "none") {
-        dropForm.style.display = "block"
+    let dropSearchMenu = document.querySelector("[data-button-search-menu-menu-show-hide]")
+    if (dropSearchMenu.style.display === "none") {
+        dropSearchMenu.style.display = "block"
     } else {
-        dropForm.style.display = "none"
+        dropSearchMenu.style.display = "none"
     }
 
-    let sBtn = document.querySelector("[data-button-search-menu-button-show-hide]")
-    if (sBtn.style.display === "none") {
-        sBtn.style.display = "block"
+    let searchBtn = document.querySelector("[data-button-search-menu-button-show-hide]")
+    if (searchBtn.style.display === "none") {
+        searchBtn.style.display = "block"
     } else {
-        sBtn.style.display = "none"
+        searchBtn.style.display = "none"
     }
 
-    let dataWindowFname = document.querySelector("[data-display-name]")
-    if (dataWindowFname.style.display === "none") {
-        dataWindowFname.style.display = "block"
+    let dropWindowName = document.querySelector("[data-display-name]")
+    if (dropWindowName.style.display === "none") {
+        dropWindowName.style.display = "block"
     } else {
-        dataWindowFname.style.display = "none"
+        dropWindowName.style.display = "none"
     }
 
-    let dataWindowLname = document.querySelector("[data-display-last-name ]")
-    if (dataWindowLname.style.display === "none") {
-        dataWindowLname.style.display = "block"
+    let dropWindowLastName = document.querySelector("[data-display-last-name ]")
+    if (dropWindowLastName.style.display === "none") {
+        dropWindowLastName.style.display = "block"
     }
     else {
-        dataWindowLname.style.display = "none"
+        dropWindowLastName.style.display = "none"
     }
 
 })
