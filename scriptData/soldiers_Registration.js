@@ -23,55 +23,26 @@ boton.addEventListener("click", () => {
     let idName = document.getElementById("id")
     let valIdName = idName.value.toUpperCase()
 
+    if (!valFirstName == '' && !valLastName == '' && !valIdName == '') {
+        let soldier = new Soldiers(valFirstName, valLastName, valIdName)
+        combatSquad.push(soldier);
 
-    let soldier = new Soldiers(valFirstName, valLastName, valIdName)
-    combatSquad.push(soldier);
-    if (soldier.idName === valIdName) {
         Swal.fire({
-            title: 'You did not put your ID',
-            text: 'Check your ID',
-            icon: 'error',
+            title: 'Processing data',
+            text: 'Data complete correct',
+            icon: 'success',
             confirmButtonText: 'OK',
 
         })
-
     }
-    Swal.fire({
-        title: 'We going to process your data',
-        text: 'DATA SENT CORRECT',
-        icon: 'success',
-        confirmButtonText: 'OK',
-
-    })
-    if (valFirstName === "") {
+    else {
         Swal.fire({
-            title: 'You did not put your name',
-            text: 'Check your Name',
+            title: 'Check soldiers data',
+            text: 'You need complet all forms',
             icon: 'error',
             confirmButtonText: 'OK',
 
         })
-        console.log("ERROR NAME")
-    }
-    if (valLastName === "") {
-        Swal.fire({
-            title: 'You did not put your LastName',
-            text: 'Check your Last Name',
-            icon: 'error',
-            confirmButtonText: 'OK',
-
-        })
-        console.log("ERROR LAS TANME")
-    }
-    if (valIdName === "") {
-        Swal.fire({
-            title: 'You did not your ID',
-            text: 'Check your ID',
-            icon: 'error',
-            confirmButtonText: 'OK',
-
-        })
-        console.log("ERROR ID")
     }
 
 });
