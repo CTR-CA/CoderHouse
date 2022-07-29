@@ -49,7 +49,7 @@ function editSoldier() {
     if (searchId) {
         const editId = combatSquad.find((soldier) => combatSquad.idName === idName);
 
-        const editNameFormValue = document.getElementById("editNameForm")
+        const editNameFormValue = document.querySelector("[data-button-editSoldier-name]")
         const valueName = editNameFormValue.value.toUpperCase()
         searchId.fName = valueName
 
